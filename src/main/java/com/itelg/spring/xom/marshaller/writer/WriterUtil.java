@@ -12,14 +12,14 @@ import nu.xom.Element;
 
 public class WriterUtil
 {
-    private final DateTimeFormatter format = DateTimeFormatter.ISO_OFFSET_DATE_TIME.withZone(ZoneId.systemDefault());
+    private static final DateTimeFormatter format = DateTimeFormatter.ISO_OFFSET_DATE_TIME.withZone(ZoneId.systemDefault());
 
     private WriterUtil()
     {
 
     }
 
-    public void addAttribute(Element element, String name, Object value)
+    public static void addAttribute(Element element, String name, Object value)
     {
         if (value != null)
         {
@@ -27,22 +27,22 @@ public class WriterUtil
         }
     }
 
-    public void addAttribute(Element element, String name, int value)
+    public static void addAttribute(Element element, String name, int value)
     {
         element.addAttribute(new Attribute(name, String.valueOf(value)));
     }
 
-    public void addAttribute(Element element, String name, long value)
+    public static void addAttribute(Element element, String name, long value)
     {
         element.addAttribute(new Attribute(name, String.valueOf(value)));
     }
 
-    public void addAttribute(Element element, String name, double value)
+    public static void addAttribute(Element element, String name, double value)
     {
         element.addAttribute(new Attribute(name, String.valueOf(value)));
     }
 
-    public void addAttribute(Element element, String name, Date value)
+    public static void addAttribute(Element element, String name, Date value)
     {
         if (value != null)
         {
@@ -51,7 +51,7 @@ public class WriterUtil
         }
     }
 
-    public void addAttribute(Element element, String name, LocalDateTime value)
+    public static void addAttribute(Element element, String name, LocalDateTime value)
     {
         if (value != null)
         {
