@@ -1,6 +1,7 @@
 package com.itelg.spring.xom.marshaller;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,6 +45,6 @@ public class XomMarshaller implements Marshaller
         StreamResult streamResult = (StreamResult) result;
         Writer<?> writer = writers.get(object.getClass());
         Element rootElement = writer.write(object);
-        IOUtils.write(new Document(rootElement).toXML(), streamResult.getOutputStream());
+        IOUtils.write(new Document(rootElement).toXML(), streamResult.getOutputStream(), Charset.defaultCharset());
     }
 }

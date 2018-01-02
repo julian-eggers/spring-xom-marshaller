@@ -1,8 +1,8 @@
 spring-xom-marshaller
-============
+=====================
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.itelg.spring/spring-xom-marshaller/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.itelg.spring/spring-xom-marshaller)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/40fe4c8aa29241429724a9c415051a06)](https://www.codacy.com/app/eggers-julian/spring-xom-marshaller?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=julian-eggers/spring-xom-marshaller&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/40fe4c8aa29241429724a9c415051a06)](https://www.codacy.com/app/eggers-julian/spring-xom-marshaller)
 [![Coverage Status](https://coveralls.io/repos/julian-eggers/spring-xom-marshaller/badge.svg)](https://coveralls.io/r/julian-eggers/spring-xom-marshaller)
 [![Build Status](https://travis-ci.org/julian-eggers/spring-xom-marshaller.svg?branch=master)](https://travis-ci.org/julian-eggers/spring-xom-marshaller)
 
@@ -10,13 +10,11 @@ Spring XML Marshalling with [XOM](http://www.xom.nu/)
 
 #### Maven
 ```xml
-<dependencies>
-	<dependency>
-		<groupId>com.itelg.spring</groupId>
-		<artifactId>spring-xom-marshaller</artifactId>
-		<version>0.0.1-RELEASE</version>
-	</dependency>
-</dependencies>
+<dependency>
+	<groupId>com.itelg.spring</groupId>
+	<artifactId>spring-xom-marshaller</artifactId>
+	<version>0.1.0-RELEASE</version>
+</dependency>
 ```
 
 #### Examples
