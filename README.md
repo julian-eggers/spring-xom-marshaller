@@ -13,7 +13,7 @@ Spring XML Marshalling with [XOM](http://www.xom.nu/)
 <dependency>
 	<groupId>com.itelg.spring</groupId>
 	<artifactId>spring-xom-marshaller</artifactId>
-	<version>0.1.0-RELEASE</version>
+	<version>1.0.0-RC1</version>
 </dependency>
 ```
 
