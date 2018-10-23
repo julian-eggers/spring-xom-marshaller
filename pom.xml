@@ -48,7 +48,7 @@
     <dependency>
       <groupId>com.itelg</groupId>
       <artifactId>xpath-helper</artifactId>
-      <version>0.4.7-RELEASE</version>
+      <version>0.5.2-RELEASE</version>
     </dependency>
 
     <!-- Testing -->
