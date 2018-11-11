@@ -1,5 +1,6 @@
 spring-xom-marshaller
 =====================
+
 [![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/itelg/spring/spring-xom-marshaller/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.itelg.spring%22%20AND%20a%3A%22spring-xom-marshaller%22)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/40fe4c8aa29241429724a9c415051a06)](https://www.codacy.com/app/eggers-julian/spring-xom-marshaller)
 [![Coverage Status](https://coveralls.io/repos/julian-eggers/spring-xom-marshaller/badge.svg)](https://coveralls.io/r/julian-eggers/spring-xom-marshaller)
@@ -12,7 +13,7 @@ Spring XML Marshalling with [XOM](http://www.xom.nu/)
 <dependency>
 	<groupId>com.itelg.spring</groupId>
 	<artifactId>spring-xom-marshaller</artifactId>
-	<version>1.0.0-RELEASE</version>
+	<version>1.0.1-RELEASE</version>
 </dependency>
 ```
 
@@ -53,4 +54,18 @@ public class IntegerWriter extends AbstractWriter<Integer>
         return rootElement;
     }
 }
+```
+
+
+
+## Build & Release
+
+### Build
+```
+mvn clean package
+```
+
+### Release
+```
+mvn clean deploy
 ```
