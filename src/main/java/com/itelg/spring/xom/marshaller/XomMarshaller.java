@@ -11,7 +11,6 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.oxm.Marshaller;
-import org.springframework.oxm.XmlMappingException;
 
 import com.itelg.spring.xom.marshaller.writer.Writer;
 import com.itelg.spring.xom.marshaller.writer.WriterAnalyzer;
@@ -40,7 +39,7 @@ public class XomMarshaller implements Marshaller
     }
 
     @Override
-    public void marshal(Object object, Result result) throws IOException, XmlMappingException
+    public void marshal(Object object, Result result) throws IOException
     {
         StreamResult streamResult = (StreamResult) result;
         Writer<?> writer = writers.get(object.getClass());
