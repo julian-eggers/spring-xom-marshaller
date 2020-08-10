@@ -3,7 +3,7 @@ name: release
 on:
   push:
     branches:
-      - master
+      - springboot23
  
 jobs:
   release:
