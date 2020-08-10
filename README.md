@@ -1,10 +1,8 @@
-spring-xom-marshaller
-=====================
+# spring-xom-marshaller
 
-[![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/itelg/spring/spring-xom-marshaller/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.itelg.spring%22%20AND%20a%3A%22spring-xom-marshaller%22)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/40fe4c8aa29241429724a9c415051a06)](https://www.codacy.com/app/eggers-julian/spring-xom-marshaller)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/40fe4c8aa29241429724a9c415051a06)](https://www.codacy.com/app/eggers-julian/spring-xom-marshaller)
-[![Build Status](https://travis-ci.org/julian-eggers/spring-xom-marshaller.svg?branch=master)](https://travis-ci.org/julian-eggers/spring-xom-marshaller)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.itelg.spring/spring-xom-marshaller/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.itelg.spring/spring-xom-marshaller)
+[![Build](https://github.com/julian-eggers/spring-xom-marshaller/workflows/release/badge.svg)](https://github.com/julian-eggers/spring-xom-marshaller/actions)
+[![Nightly build](https://github.com/julian-eggers/spring-xom-marshaller/workflows/nightly/badge.svg)](https://github.com/julian-eggers/spring-xom-marshaller/actions)
 
 Spring XML Marshalling with [XOM](http://www.xom.nu/)
 
