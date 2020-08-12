@@ -13,5 +13,5 @@ import org.springframework.context.annotation.Import;
 @Import(SpringXomMarshallerConfiguration.class)
 public @interface EnableXomMarshaller
 {
-
+    // not required
 }
