@@ -1,8 +1,10 @@
 # spring-xom-marshaller
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.itelg.spring/spring-xom-marshaller/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.itelg.spring/spring-xom-marshaller)
-[![Build](https://github.com/julian-eggers/spring-xom-marshaller/workflows/release/badge.svg)](https://github.com/julian-eggers/spring-xom-marshaller/actions)
-[![Nightly build](https://github.com/julian-eggers/spring-xom-marshaller/workflows/nightly/badge.svg)](https://github.com/julian-eggers/spring-xom-marshaller/actions)
+[![Maven Central](https://img.shields.io/maven-central/v/com.itelg.spring/spring-xom-marshaller.svg?label=maven-central)](https://search.maven.org/artifact/com.itelg.spring/spring-xom-marshaller)
+[![Release](https://github.com/julian-eggers/spring-xom-marshaller/actions/workflows/release.yml/badge.svg)](https://github.com/julian-eggers/spring-xom-marshaller/actions/workflows/release.yml)
+[![Nightly build](https://github.com/julian-eggers/spring-xom-marshaller/actions/workflows/nightly.yml/badge.svg)](https://github.com/julian-eggers/spring-xom-marshaller/actions/workflows/nightly.yml)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=julian-eggers_spring-xom-marshaller&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=julian-eggers_spring-xom-marshaller)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=julian-eggers_spring-xom-marshaller&metric=coverage)](https://sonarcloud.io/summary/new_code?id=julian-eggers_spring-xom-marshaller)
 
 Spring XML Marshalling with [XOM](http://www.xom.nu/)
 

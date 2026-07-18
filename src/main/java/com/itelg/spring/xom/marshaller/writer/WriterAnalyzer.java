@@ -1,12 +1,10 @@
 package com.itelg.spring.xom.marshaller.writer;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 
 public class WriterAnalyzer
 {
-    private static final Pattern returnTypePattern = Pattern.compile(".*<(.*)>");
-
     private WriterAnalyzer()
     {
     }
@@ -21,17 +19,14 @@ public class WriterAnalyzer
 
     private static Class<?> getReturnType(Writer<?> writer)
     {
-        String typeName = writer.getClass().getGenericSuperclass().getTypeName();
-        Matcher matcher = returnTypePattern.matcher(typeName);
-        matcher.find();
+        Type genericSuperclass = writer.getClass().getGenericSuperclass();
 
-        try
+        if (genericSuperclass instanceof ParameterizedType parameterizedType
+                && parameterizedType.getActualTypeArguments()[0] instanceof Class<?> returnType)
         {
-            return Class.forName(matcher.group(1));
+            return returnType;
         }
-        catch (ClassNotFoundException e)
-        {
-            throw new RuntimeException(e);
-        }
+
+        throw new IllegalArgumentException("Invalid writer-implementation!");
     }
 }
